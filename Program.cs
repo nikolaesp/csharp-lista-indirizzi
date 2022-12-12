@@ -36,7 +36,7 @@ catch (Exception e)
     Console.WriteLine(e.Message);
 }
 
-Console.WriteLine("-----------------------------------------------EOF---!---*");
+Console.WriteLine("---------------------------------------------EOF-!");
 foreach (Addresses indirizzo in listaddress)
 {
     Console.WriteLine(indirizzo);

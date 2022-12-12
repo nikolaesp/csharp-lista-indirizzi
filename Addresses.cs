@@ -68,7 +68,10 @@ namespace csharp_lista_indirizzi
 
         public override string ToString()
         {
-            return "Person: " + Name + " " + Surname + "\t Address: "+ Street+ "\t"+City+"\t"+Province+"\t"+ZIP;
+            return "---------------------------------------------------------------------------------" +
+                "\nPerson: " + Name + "\t" + Surname + 
+                "\nAddress:\t"+ Street+ "\t"+City+"\t"+Province+"\t"+ZIP+"\n" +
+                   "---------------------------------------------------------------------------------";
         }
     }
 }
