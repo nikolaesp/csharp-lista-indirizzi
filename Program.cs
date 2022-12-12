@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 
 List<Addresses> listaddress = new List<Addresses>();
 
+
 try
 {
     StreamReader file = File.OpenText("D:\\ProgGeneration\\csharp-lista-indirizzi\\File\\addresses.csv");
@@ -16,17 +17,23 @@ try
        
         Console.WriteLine(line);
         string[] addresses = line.Split(',');
+       
+           string nome = addresses[0];
+      
+            string cognome = addresses[1];
+    
+           string via = addresses[2];
+    
+            string cita = addresses[3];
+     
+             string provincia = addresses[4];
+      
+            string zip = addresses[5];
+       
 
-        string nome = addresses[0];
-        string cognome = addresses[1];
-        string via = addresses[2];
-        string cita = addresses[3];
-        string provincia = addresses[4];
-        string zip = addresses[5];
-
-
-       Addresses indirizi = new Addresses(nome,cognome,via,cita,provincia,zip);
-        listaddress.Add(indirizi);
+            Addresses indirizi = new Addresses(nome, cognome, via, cita, provincia, zip);
+            listaddress.Add(indirizi);
+        
     }
 
     file.Close();

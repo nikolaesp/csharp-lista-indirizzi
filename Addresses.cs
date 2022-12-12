@@ -70,7 +70,7 @@ namespace csharp_lista_indirizzi
         {
             return "---------------------------------------------------------------------------------" +
                 "\nPerson: " + Name + "\t" + Surname + 
-                "\nAddress:\t"+ Street+ "\t"+City+"\t"+Province+"\t"+ZIP+"\n" +
+                "\nAddress: "+ Street+ "\t"+City+"\t"+Province+"\t"+ZIP+"\n" +
                    "---------------------------------------------------------------------------------";
         }
     }
