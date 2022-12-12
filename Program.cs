@@ -34,7 +34,7 @@ try
             Addresses indirizi = new Addresses(nome, cognome, via, cita, provincia, zip);
             listaddress.Add(indirizi);
         }
-        else { Console.WriteLine("Adressa nen e scritta benne !!!"); }
+        else { Console.WriteLine("Adressa non e scritta benne !!!"); }
     }
 
     file.Close();
