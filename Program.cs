@@ -9,7 +9,7 @@ List<Addresses> listaddress = new List<Addresses>();
 try
 {
     StreamReader file = File.OpenText("D:\\ProgGeneration\\csharp-lista-indirizzi\\File\\addresses.csv");
-
+    file.ReadLine();
     while (!file.EndOfStream)
     {
         string line = file.ReadLine();
