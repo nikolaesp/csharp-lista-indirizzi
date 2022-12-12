@@ -17,23 +17,24 @@ try
        
         Console.WriteLine(line);
         string[] addresses = line.Split(',');
-       
-           string nome = addresses[0];
-      
+        if (addresses.Length >= 6) {
+            string nome = addresses[0];
+
             string cognome = addresses[1];
-    
-           string via = addresses[2];
-    
+
+            string via = addresses[2];
+
             string cita = addresses[3];
-     
-             string provincia = addresses[4];
-      
+
+            string provincia = addresses[4];
+
             string zip = addresses[5];
-       
+
 
             Addresses indirizi = new Addresses(nome, cognome, via, cita, provincia, zip);
             listaddress.Add(indirizi);
-        
+        }
+        else { Console.WriteLine("Adressa nen e scritta benne !!!"); }
     }
 
     file.Close();
