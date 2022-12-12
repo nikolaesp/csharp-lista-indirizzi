@@ -15,7 +15,7 @@ try
         string line = file.ReadLine();
 
        
-        Console.WriteLine(line);
+        //Console.WriteLine(line);
         string[] addresses = line.Split(',');
         if (addresses.Length >= 6) {
             string nome = addresses[0];
@@ -44,7 +44,7 @@ catch (Exception e)
     Console.WriteLine(e.Message);
 }
 
-Console.WriteLine("---------------------------------------------EOF-!");
+//Console.WriteLine("---------------------------------------------EOF-!");
 foreach (Addresses indirizzo in listaddress)
 {
     Console.WriteLine(indirizzo);
